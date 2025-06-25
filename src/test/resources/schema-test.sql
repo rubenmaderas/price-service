@@ -11,5 +11,5 @@ CREATE TABLE IF NOT EXISTS prices
     currency   VARCHAR(10)    NOT NULL
     );
 
-CREATE INDEX idx_prices_lookup
+CREATE INDEX IF NOT EXISTS idx_prices_lookup
     ON prices (product_id, brand_id, start_date, end_date, priority);
