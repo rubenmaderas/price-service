@@ -1,0 +1,1 @@
+package com.ecommerce.priceservice.infrastructure.exceptions;

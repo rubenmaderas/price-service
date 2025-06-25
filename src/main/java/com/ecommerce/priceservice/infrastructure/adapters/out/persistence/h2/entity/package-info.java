@@ -1,0 +1,1 @@
+package com.ecommerce.priceservice.infrastructure.adapters.out.persistence.h2.entity;
