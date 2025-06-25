@@ -8,10 +8,17 @@ import static org.junit.jupiter.api.Assertions.assertTrue;
 import static org.junit.jupiter.api.Assertions.assertDoesNotThrow;
 
 @SpringBootTest
-class PriceServiceApplicationTests {
+class PriceServiceApplicationTest {
 
 	@Test
+	@DisplayName("Contexto de Spring se carga correctamente sin errores")
 	void contextLoads() {
-		// Context loads successfully
+		assertTrue(true);
+	}
+
+	@Test
+	@DisplayName("El metodo main se ejecuta sin lanzar excepciones")
+	void mainMethod_ShouldRunWithoutExceptions() {
+		assertDoesNotThrow(() -> PriceServiceApplication.main(new String[]{}));
 	}
 }
